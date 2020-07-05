@@ -73,7 +73,7 @@ def load_data(city, month, day):
     df['day_of_week'] = df['Start time'].dt.weekday_name
 
     #Filter by month if applicable
-    if month != 'All':
+    if month != len(months):
         # Filter by month to create the new dataframe
         df = df[df['month'] == month]
 
