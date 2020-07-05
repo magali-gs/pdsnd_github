@@ -188,6 +188,23 @@ def user_stats(df):
     print('-'*40)
 
 
+def display_data(df):
+    """Displays raw data on user request.
+
+    Args:
+        (DataFrame) df - Panda DataFrame containin city filtered by month and day.
+    """
+    view_data = input('Do you want to see the first five rows of raw data? Enter yes or no. \n').lower()
+    line = 0
+    while True:
+        if view_data != 'no':
+            print(df.iloc[line : line + 5])
+            line += 5
+            view_data = input('Do you want to see more five rows of raw data? Enter yes or no. \n').lower()
+        else:
+            break
+
+
 def main():
     while True:
         city, month, day = get_filters()
@@ -197,6 +214,9 @@ def main():
         station_stats(df)
         trip_duration_stats(df)
         user_stats(df)
+
+        display_data(df)
+
 
         restart = input('\nWould you like to restart? Enter yes or no.\n')
         if restart.lower() != 'yes':
