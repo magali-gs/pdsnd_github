@@ -1,15 +1,16 @@
 ### Date created
-Include the date you created this project and README file.
+Created on 5th July 2020.
 
 ### Project Title
-Replace the Project Title
+Explore US Bikeshare Data
 
 ### Description
-Describe what your project is about and what it does
+Programming for Data Science with Python nanodegree from Udacity.
 
 ### Files used
-Include the files used
+chicago.csv
+washington.csv
+new_york_city.csv
 
 ### Credits
-It's important to give proper credit. Add links to any repo that inspired you or blogposts you consulted.
-
+It was used the Mentor Help to answer technical questions about IndexError.
